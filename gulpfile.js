@@ -32,7 +32,7 @@ const
             img: 'app/image/**/*.*'
         },
         watch: {
-            html: ['app/templates/*.html', 'app/*.html'],
+            html: 'app/templates/**/*.html',
             scss: 'app/scss/**/*.scss',
             js: 'app/js/**/*.*',
             img: 'app/image/**/*.*'
@@ -115,4 +115,4 @@ gulp.task('build',
 )
 
 //gulp
-gulp.task('default',gulp.parallel('html', 'sass', 'js', 'img','watch','server'))
+gulp.task('default', gulp.parallel('html', 'sass', 'js', 'img', 'watch', 'server'))
