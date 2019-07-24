@@ -1,6 +1,9 @@
-@import "components/common/common";
-@import "components/header/header";
-@import "components/index/index";
-@import "components/footer/footer";
-@import "components/catalog/catalog";
-@import "components/form/form";
+@import "fonts";
+@import "vars";
+@import "mixins";
+
+@import "components/page";
+@import "components/page-header";
+@import "components/page-main";
+@import "components/main-nav";
+@import "components/site-list";
