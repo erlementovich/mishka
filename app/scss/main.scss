@@ -1,9 +1,30 @@
 @import "fonts";
 @import "vars";
 @import "mixins";
+@import "components/button";
 
 @import "components/page";
+//header
 @import "components/page-header";
 @import "components/page-main";
 @import "components/main-nav";
 @import "components/site-list";
+
+//index
+@import "components/products";
+@import "components/products-nav";
+@import "components/products-list";
+@import "components/services-list";
+@import "components/offer";
+@import "components/about";
+@import "components/reviews";
+@import "components/contacts";
+
+//catalog
+@import "components/catalog";
+
+//form
+@import "components/knitting";
+@import "components/feedback";
+//footer
+@import "components/footer";

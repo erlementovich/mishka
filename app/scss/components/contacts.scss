@@ -1,0 +1,42 @@
+.contacts {
+  @include mobile-layout-small;
+}
+.contacts__title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.contacts__info {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.contacts__map {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.contacts__write {
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.contacts__item {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.contacts__adress {
+  margin-left: 30px;
+}
+.mail-green {
+  border-bottom: 1px solid $border-green;
+  padding-bottom: 5px;
+}

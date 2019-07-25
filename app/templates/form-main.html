@@ -1,82 +1,110 @@
 <main class="page-main">
     <section class="knitting">
         <h1 class="knitting__title">Вязание на заказ</h1>
-        <p class="knitting__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
-            заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <div class="knitting__form feedback">
-            <form class="feedback__form">
 
+        <div class="knitting__form feedback">
+            <p class="feedback__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
+                заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <form class="feedback__form">
                 <p class="feedback__type">
-                    <label class="feedback__tag">Тип</label>
-                    <div class="feedback__form--line"></div>
-                    <label>
-                        <input class="feedback__radio" type="radio" name="choice" value="interior" checked>
-                        <b class="feedback__item">Аксессуар для
-                            интерьера</b>
-                    </label>
-                    <label>
-                        <input class="feedback__radio" type="radio" name="choice" value="toy">
-                        <b class="feedback__item">Детская игрушка</b>
-                    </label>
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Тип</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <div class="feedback__check-wrapper">
+                        <label>
+                            <input class="feedback__radio" type="radio" name="choice" value="interior" checked>
+                            <b class="feedback__item">Аксессуар для
+                                интерьера</b>
+                        </label>
+                        <label>
+                            <input class="feedback__radio" type="radio" name="choice" value="toy">
+                            <b class="feedback__item">Детская игрушка</b>
+                        </label>
+                    </div>
+
                 </p>
 
                 <p class="feedback__color">
-                    <label class="feedback__tag">Цвет</label>
-                    <div class="feedback__form--line"></div>
-                    <label><input class="feedback__check form-checkbox" name="color" type="checkbox" value="white"
-                            checked>
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Цвет</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <p>
+                        <input class="feedback__check form-checkbox" name="color" type="checkbox" value="white" checked>
                         <b>Белый</b>
-                    </label>
-                    <label><input class="feedback__check form-checkbox" name="color" type="checkbox" value="gray"
-                            checked>
+                    </p>
+                    <p>
+                        <input class="feedback__check form-checkbox" name="color" type="checkbox" value="gray" checked>
                         <b>Серый</b>
-                    </label>
-                    <label><input class="feedback__check form-checkbox" name="color" type="checkbox" value="tiffani">
-                        <b>«Тиффани»</b> </label>
-                    <label><input class="feedback__check form-checkbox" name="color" type="checkbox" value="black">
+                    </p>
+                    <p>
+                        <input class="feedback__check form-checkbox" name="color" type="checkbox" value="tiffani">
+                        <b>«Тиффани»</b>
+                    </p>
+                    <p>
+                        <input class="feedback__check form-checkbox" name="color" type="checkbox" value="black">
                         <b>Черный</b>
-                    </label>
-                    <label><input class="feedback__check form-checkbox" name="color" type="checkbox" value="pink">
+                    </p>
+                    <p>
+                        <input class="feedback__check form-checkbox" name="color" type="checkbox" value="pink">
                         <b>Розовый</b>
-                    </label>
+                    </p>
                 </p>
 
                 <p class="feedback__fullname">
-                    <label class="feedback__tag">Фио</label>
-                    <div class="feedback__form--line"></div>
-
-                    <label for="">Имя:</label>
-                    <input class="form-input feedback__input" type="text" name="name" placeholder="Введите ваше имя*"
-                        required>
-
-                    <label for="">Фамилия:</label>
-                    <input class="form-input feedback__input" type="text" name="surname"
-                        placeholder="Введите вашу фамилию*" required>
-
-                    <label for="">Отчество:</label>
-                    <input class="form-input feedback__input" type="text" name="patronymic"
-                        placeholder="Отчество, если желаете">
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Фио</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <p class="feedback__input-wrap">
+                        <label for=""><b>Имя:</b></label>
+                        <input class="form-input feedback__input" type="text" name="name"
+                            placeholder="Введите ваше имя*" required>
+                    </p>
+                    <p class="feedback__input-wrap">
+                        <label for=""><b>Фамилия:</b></label>
+                        <input class="form-input feedback__input" type="text" name="surname"
+                            placeholder="Введите вашу фамилию*" required>
+                    </p>
+                    <p class="feedback__input-wrap">
+                        <label for=""><b>Отчество:</b></label>
+                        <input class="form-input feedback__input" type="text" name="patronymic"
+                            placeholder="Отчество, если желаете">
+                    </p>
                 </p>
 
                 <p class="feedback__tel">
-                    <label class="feedback__tag">Тел</label>
-                    <div class="feedback__form--line"></div>
-                    <input type="tel" name="tel" placeholder="+7 XXX XX XX*" required>
-                    <img class="" src="" alt="">
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Тел</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <div class="feedback__contact-wrap">
+                        <input class="form-input feedback__input" type="tel" name="tel" placeholder="+7 XXX XX XX*"
+                            required>
+                        <img class="feedback__icon" src="image/icons/icon-phone.svg" alt="">
+                    </div>
                 </p>
 
 
                 <p class="feedback__email">
-                    <label class="feedback__tag">E-mail</label>
-                    <div class="feedback__form--line"></div>
-                    <input class="form-input" type="email" name="email" placeholder="Ваш Email*" required>
-                    <img class="" src="" alt="">
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Email</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <div class="feedback__contact-wrap">
+                        <input class="form-input feedback__input" type="email" name="email" placeholder="Ваш Email*"
+                            required>
+                        <img class="feedback__icon" src="image/icons/icon-mail.svg" alt="">
+                    </div>
                 </p>
 
                 <p class="feedback__additionally">
-                    <label class="feedback__tag">Доп</label>
-                    <div class="feedback__form--line"></div>
-                    <textarea name="message" id="" cols="30" rows="10" placeholder="Опишите все ваши 
+                    <div class="feedback__decoration">
+                        <label class="feedback__tag"><b>Доп</b></label>
+                        <div class="feedback__form--line"></div>
+                    </div>
+                    <textarea class="feedback__message" name="message" id="" cols="30" rows="10" placeholder="Опишите все ваши 
                         пожелания к заказу">
                         </textarea>
                 </p>

@@ -1,0 +1,6 @@
+.products__nav {
+    @include mobile-width {
+      display: none;
+    }
+  }
+  

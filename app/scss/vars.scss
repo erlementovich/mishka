@@ -10,7 +10,19 @@ $text-green: #63d1bb;
 $color-interior: #63d1bb;
 $color-toys: #56c3b2;
 $border-color: #ececec;
+$placeholder-color: $text-gray;
+$border-green: #63d1bb;
+$border-button: #444444;
+$border-input: #000000;
 $icon-search: #d3d2d2;
+$footer-background: #f1f1f1;
+$catalog-background: $footer-background;
 
 //margin-mobile
-$margin-header: 30 / 320 *100%;
+$margin-header: 30 / 320 * 100%;
+$catalog-margin: 30px;
+
+//font-size
+$main-size: 17px;
+$big-size: 27px;
+$small-size: 13px;

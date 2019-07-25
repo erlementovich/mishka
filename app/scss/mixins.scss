@@ -15,3 +15,16 @@
     @content;
   }
 }
+
+//сетка для mobile-version
+@mixin mobile-layout-small() {
+  display: grid;
+  grid-template-columns: $margin-header minmax(260px, 1fr) $margin-header;
+  grid-template-rows: auto;
+
+}
+
+@mixin mobile-layout-big() {
+  display: grid;
+  grid-template-columns: 1fr;
+}

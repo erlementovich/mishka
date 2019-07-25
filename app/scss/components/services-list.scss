@@ -1,0 +1,26 @@
+.services-list__wrapper {
+  display: grid;
+  background: $color-interior;
+}
+.services-list__item:nth-child(2n) {
+  background: $color-toys;
+}
+
+.services-list__item {
+  display: grid;
+  grid-template-columns: $margin-header 1fr 1fr $margin-header;
+  grid-template-rows: auto;
+  height: 100px;
+  align-content: center;
+}
+.services-list__title {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  align-self: center;
+}
+
+.services-list__image {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  justify-self: end;
+}

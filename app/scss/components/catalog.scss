@@ -1,0 +1,30 @@
+.catalog__title {
+  margin: auto;
+  height: 177px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $catalog-background;
+}
+
+.catalog__items {
+  @include mobile-layout-small;
+}
+.catalog__item {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  margin: auto;
+  border: 2px solid $border-color;
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  margin-top: $catalog-margin;
+}
+
+.catalog__image {
+}
+
+.catalog__description {
+  margin-left: $catalog-margin;
+  margin-right: $catalog-margin;
+}

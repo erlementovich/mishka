@@ -1,0 +1,20 @@
+.products__wrapper-image {
+  position: relative;
+}
+.products__background {
+  line-height: 0;
+  overflow: hidden;
+}
+.products__image {
+  width: 100%;
+  height: auto;
+}
+.products__title {
+  margin: auto;
+  padding: 0;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+}

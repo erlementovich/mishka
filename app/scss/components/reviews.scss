@@ -1,0 +1,48 @@
+.reviews {
+  @include mobile-layout-small;
+}
+.reviews__title {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.reviews__wrapper {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.reviews__write {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.reviews__authors {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__description {
+  color: $text-gray;
+}
+
+.reviews__handler {
+  display: flex;
+  justify-content: space-around; 
+  text-align: center;
+}
+.reviews__link{
+  width: 100%;
+  border: 1px solid $border-color;
+  display: flex;
+  justify-content: center;
+}
+.reviews__arrow{
+  width: 35%;
+  margin: 15px 0 15px 0;
+}

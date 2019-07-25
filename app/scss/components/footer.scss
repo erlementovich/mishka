@@ -1,0 +1,32 @@
+.page-footer {
+  @include mobile-layout-small;
+  background: $footer-background;
+}
+.page-footer__social-icons {
+  border-bottom: 2px solid $border-color;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.social-icons__item {
+  margin: 0 25px 0 25px;
+}
+
+.page-footer__developed-by {
+  height: 80px;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.developed-by__image {
+  margin-left: 25px;
+}

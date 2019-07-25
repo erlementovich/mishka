@@ -1,0 +1,26 @@
+.offer {
+  @include mobile-layout-small;
+}
+.offer__wrapper {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.offer__title-second {
+  color: $text-green;
+}
+
+.offer__description {
+  color: $text-gray;
+}
+
+.offer__product-detail {
+  color: $text-gray;
+}
+.offer__cost {
+  color: $text-gray;
+  display: grid;
+}
+.offer__price {
+  text-align: center;
+}

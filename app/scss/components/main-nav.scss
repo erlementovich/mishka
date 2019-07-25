@@ -1,41 +1,29 @@
 .main-nav {
-  @include mobile-width {
-    display: grid;
-  }
-}
-@include mobile-width {
+  display: grid;
 }
 .main-nav__top {
-  @include mobile-width {
-    height: 80px;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid $border-color;
-  }
+  display: grid;
+  grid-template-columns: $margin-header 1fr 100px 1fr $margin-header;
+  border-bottom: 2px solid $border-color;
+  height: 80px;
+  align-content: center;
 }
-.main-nav__toggle--btn {
-  @include mobile-width {
-    padding: 0;
-    margin: 0;
-    width: 20px;
-  }
-}
-.main-nav__toggle {
-  @include mobile-width {
-    position: absolute;
-    right: 0;
-    margin: 0;
-    padding: 0;
-    margin-right: $margin-header;
-    background: none;
-    border: none;
-  }
+.main-nav--help {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 .main-nav__logo {
-  @include mobile-width {
-    text-align: center;
-    flex: 0 0 100%;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+.main-nav__toggle {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.main-nav__toggle {
+  background: none;
+  border: none;
+  justify-self: end;
+  cursor: pointer;
 }
