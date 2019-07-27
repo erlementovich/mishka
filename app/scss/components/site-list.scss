@@ -1,19 +1,32 @@
 .site-list {
-  display: grid;
-  grid-template-rows: auto;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
+
 .site-list__link {
-  @include mobile-layout-small;
   text-decoration: none;
-  height: 80px;
-  align-content: center;
-  border-bottom: 2px solid $border-color;
+  @media only screen and (max-width: $tablet-width) {
+    height: 80px;
+    border-bottom: 2px solid $border-color;
+  }
+  align-items: center;
 }
 
+.site-list__link {
+  display: flex;
+  align-items: center;
+}
 .site-list__item {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  display: flex;
+  align-items: center;
+}
+.site-list__image {
+  @media only screen and (max-width: $tablet-width) {
+    position: absolute;
+    left: $margin-header;
+  }
+}
+.site-list__description {
+  margin-left: 30vw;
 }

@@ -1,14 +1,3 @@
-.feedback {
-  @include mobile-layout-small;
-}
-.feedback__description {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.feedback__form {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
 .feedback__tag {
   text-transform: uppercase;
   color: $text-green;
@@ -24,10 +13,7 @@
   height: 1px;
   background: $border-green;
 }
-.feedback__check-wrapper {
-  display: flex;
-  flex-direction: column;
-}
+
 .feedback__color {
   display: flex;
   flex-direction: column;
@@ -66,5 +52,32 @@
   border: 1px solid $border-input;
 }
 .feedback__button {
-  width: 100%;
+  width: 100;
 }
+
+//checkbox
+.feedback__radio[type="radio"],
+.feedback__radio[type="checkbox"] {
+  /* Hide original inputs */
+  visibility: hidden;
+  position: absolute;
+}
+
+.feedback__radio[type="radio"] + label:before,
+.feedback__radio[type="checkbox"] + label:before {
+  height: 35px;
+  width: 35px;
+  content: " ";
+  display: inline-block;
+  vertical-align: baseline;
+  border: 1px solid #777;
+}
+
+.feedback__radio[type="radio"]:checked + label:before,
+.feedback__radio[type="checkbox"]:checked + label:before {
+  background: gold;
+}
+.feedback__radio[type="radio"] + label:before {
+  border-radius: 50%;
+}
+//

@@ -1,31 +1,24 @@
 <main class="page-main">
     <section class="products">
-        <header class="products__nav">
-            <ul class="products-list">
-                <li class="products-list__item"></li>
-                <li class="products-list__item"></li>
-                <li class="products-list__item"></li>
-            </ul>
-        </header>
         <div class="products__wrapper-image">
             <div class="products__background ">
-                <img class="products__image" src="../image/hero-mobile@1x.jpg" alt="">
+                <img class="products__image" src="image/hero-mobile@1x.jpg" alt="">
             </div>
             <h1 class="products__title">Милые штуки ручной
                 работы для дома</h1>
         </div>
         <div class="services-list">
             <div class="services-list__wrapper">
-                <div class="services-list__item">
+                <a href="" class="services-list__item">
                     <b class="services-list__title">Предметы
                         интерьера</b>
-                    <img class="services-list__image" src="../image/icons/icon-interior.svg" alt="">
-                </div>
-                <div class="services-list__item">
+                    <img class="services-list__image" src="image/icons/icon-interior.svg" alt="">
+                </a>
+                <a href="" class="services-list__item">
                     <b class="services-list__title">Детские
                         игрушки</b>
-                    <img class="services-list__image" src="../image/icons/icon-toy.svg" alt="">
-                </div>
+                    <img class="services-list__image" src="image/icons/icon-toy.svg" alt="">
+                </a>
             </div>
         </div>
     </section>
@@ -40,22 +33,23 @@
                 <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             </div>
             <table class="offer__product-detail">
-                <tr class="offer__color">
+                <tr class="offer__character offer__color">
+
                     <td>Цвет:</td>
-                    <td>«Тиффани»/серый
+                    <td class="offer__detail-descr">«Тиффани»/серый
                     </td>
                 </tr>
-                <tr class="offer__diameter">
+                <tr class="offer__character offer__diameter">
                     <td>Диаметр:</td>
-                    <td>25 см</td>
+                    <td class="offer__detail-descr">25 см</td>
                 </tr>
-                <tr class="offer__height">
+                <tr class="offer__character offer__height">
                     <td>Высота:</td>
-                    <td>15 см</td>
+                    <td class="offer__detail-descr">15 см</td>
                 </tr>
             </table>
             <div class="offer__image-box">
-                <img class="offer__image" src="../image/triple-set-mobile@1x.jpg" alt="">
+                <img class="offer__image" src="image/triple-set-mobile@1x.jpg" alt="">
             </div>
             <div class="offer__cost">
                 <b class="offer__price">Цена: 990 руб.</b>
@@ -63,108 +57,120 @@
             </div>
         </div>
     </section>
-
     <section class="about">
-        <h2 class="about__title">Коротко о нас:</h2>
-        <div class="about__items">
-            <div class="about__item">
-                <img class="about__item-image" src="../image/icons/icon-feature-1.svg" alt="">
-                <b class="about__item-description">Экологически
-                    чистые материалы</b>
-            </div>
-            <div class="about__item">
-                <img class="about__item-image" src="image/icons/icon-feature-3.svg" alt="">
-                <b class="about__item-description">Скандинавский стиль
-                    по российской цене</b>
-            </div>
-            <div class="about__item">
-                <img class="about__item-image" src="image/icons/icon-feature-5.svg" alt="">
-                <b class="about__item-description">Увеличивает лайки
-                    на фотографиях</b>
-            </div>
-            <div class="about__item">
-                <img class="about__item-image" src="image/icons/icon-feature-2.svg" alt="">
-                <b class="about__item-description">Связано вручную с
-                    любовью и умилением</b>
-            </div>
-            <div class="about__item">
-                <img class="about__item-image" src="image/icons/icon-feature-4.svg" alt="">
-                <b class="about__item-description">Поддержка отечественного производителя</b>
-            </div>
-            <div class="about__item">
-                <img class="about__item-image" src="image/icons/icon-feature-6.svg" alt="">
-                <b class="about__item-description">Поставляется в
-                    подарочной упаковке</b>
+        <div class="about__wrapper">
+            <h2 class="about__title">Коротко о нас:</h2>
+            <div class="about__items">
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-1.svg" width="45" alt="">
+                    <b class="about__item-description">Экологически
+                        чистые материалы</b>
+                </div>
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-3.svg" width="45" alt="">
+                    <b class="about__item-description">Скандинавский стиль
+                        по российской цене</b>
+                </div>
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-5.svg" width="45" alt="">
+                    <b class="about__item-description">Увеличивает лайки
+                        на фотографиях</b>
+                </div>
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-2.svg" width="45" alt="">
+                    <b class="about__item-description">Связано вручную с
+                        любовью и умилением</b>
+                </div>
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-4.svg" width="45" alt="">
+                    <b class="about__item-description">Поддержка отечественного производителя</b>
+                </div>
+                <div class="about__item">
+                    <img class="about__item-image" src="image/icons/icon-feature-6.svg" width="45" alt="">
+                    <b class="about__item-description">Поставляется в
+                        подарочной упаковке</b>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
-        <button class=" button reviews__write">Написать</button>
-        <div class="reviews__wrapper slider">
-            <ul class="reviews__authors slider-list">
-                <li class="reviews__author reviews__author-1">
-                    <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
-                        такого количества лайков, как у
-                        популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                        фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                    <div class="reviews_author-info">
-                        <h3 class="reviews__name">Анастасия Красильникова</h3>
-                        <p class="reviews__email">@misssssiskras</p>
-                    </div>
-                </li>
-                <li class="reviews__author reviews__author-2">
-                    <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
-                        такого количества лайков, как у
-                        популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                        фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                    <div class="reviews_author-info">
-                        <h3 class="reviews__name">Анастасия Красильникова</h3>
-                        <p class="reviews__email">@misssssiskras</p>
-                    </div>
-                </li>
-                <li class="reviews__author reviews__author-3">
-                    <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
-                        такого количества лайков, как у
-                        популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
-                        фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                    <div class="reviews_author-info">
-                        <h3 class="reviews__name">Анастасия Красильникова</h3>
-                        <p class="reviews__email">@misssssiskras</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="reviews__handler">
-                <a class="reviews__link" href=""><img class="reviews__arrow" src="../image/icons/icon-left-arrow.svg" alt=""></a>
-                <a class="reviews__link" href=""> <img class="reviews__arrow" src="../image/icons/icon-right-arrow.svg" alt=""></a>
+        <div class="reviews__wrapper">
+            <h2 class="reviews__title">Отзывы</h2>
+            <button class=" button reviews__write">Написать</button>
+            <div class="reviews__revie-wrapper slider">
+                <ul class="reviews__authors slider-list">
+                    <li class="reviews__author reviews__author-1">
+                        <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
+                            такого количества лайков, как у
+                            популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                        <div class="reviews_author-info">
+                            <h3 class="reviews__name">Анастасия Красильникова</h3>
+                            <p class="reviews__email">@misssssiskras</p>
+                        </div>
+                    </li>
+                    <li class="reviews__author reviews__author-2">
+                        <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
+                            такого количества лайков, как у
+                            популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                        <div class="reviews_author-info">
+                            <h3 class="reviews__name">Анастасия Красильникова</h3>
+                            <p class="reviews__email">@misssssiskras</p>
+                        </div>
+                    </li>
+                    <li class="reviews__author reviews__author-3">
+                        <p class="reviews__description">Я молодая мама, но всё равно фотографии не набирали и близко
+                            такого количества лайков, как у
+                            популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои
+                            фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                        <div class="reviews_author-info">
+                            <h3 class="reviews__name">Анастасия Красильникова</h3>
+                            <p class="reviews__email">@misssssiskras</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="reviews__handler">
+                    <a class="reviews__link" href=""><img class="reviews__arrow" src="image/icons/icon-left-arrow.svg"
+                            alt=""></a>
+                    <a class="reviews__link" href=""> <img class="reviews__arrow" src="image/icons/icon-right-arrow.svg"
+                            alt=""></a>
 
+                </div>
             </div>
         </div>
     </section>
     <section class="contacts">
-        <div class="contacts__title">
-            <h3 class="contacts__title-name">Контакты</h3>
-            <img class="contacts_title--image" src="" alt="">
+        <div class="contacts__descr-wrapper">
+            <div class="contacts__title">
+                <h3 class="contacts__title-name">Контакты</h3>
+                <img class="contacts_title--image" src="" alt="">
+            </div>
+            <div class="contacts__info">
+                <ul class="contacts__item">
+                    <li class="contacts__tag">e-mail:</li>
+                    <li class="contacts__adress mail-green">info@mimimishkashop.ru</li>
+                </ul>
+                <ul class="contacts__item">
+                    <li class="contacts__tag">адрес:</li>
+                    <li class="contacts__adress">г. Санкт-Петербург,
+                        ул. Большая Конюшенная,
+                        д. 19/8, офис 101</li>
+                </ul>
+            </div>
         </div>
-        <div class="contacts__info">
-            <ul class="contacts__item">
-                <li class="contacts__tag">e-mail:</li>
-                <li class="contacts__adress mail-green">info@mimimishkashop.ru</li>
-            </ul>
-            <ul class="contacts__item">
-                <li class="contacts__tag">адрес:</li>
-                <li class="contacts__adress">г. Санкт-Петербург,
-                    ул. Большая Конюшенная,
-                    д. 19/8, офис 101</li>
-            </ul>
+
+        <div class="contacts__map-wrapper">
+            <div class="contacts__map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17927.458775016465!2d49.09627435!3d55.829133549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1564007523606!5m2!1sru!2sru"
+                    width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="contacts__map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17927.458775016465!2d49.09627435!3d55.829133549999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1564007523606!5m2!1sru!2sru"
-                width="100%" height="460" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="contacts__btn-wrapper">
+            <button class="button contacts__write">Напишите нам</button>
         </div>
-        <button class="button contacts__write">Напишите нам</button>
     </section>
 
 </main>

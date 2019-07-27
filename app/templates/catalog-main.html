@@ -1,45 +1,50 @@
 <main class="page-main">
     <section class="catalog">
-        <h1 class="catalog__title">Каталог товаров</h1>
+        <div class="catalog__title-wrapper">
+            <h1 class="catalog__title">Каталог товаров</h1>
+        </div>
         <div class="catalog__items">
             <div class="catalog__item">
-                <div class="catalog__image"><img src="image/photo-1-mobile@1x.jpg" alt=""></div>
+                <div class="catalog__image"><img class="catalog__image-target" width="260" height="195"
+                        src="image/photo-1-mobile@1x.jpg" alt=""></div>
                 <div class="catalog__description">
                     <b>Зайчик-попрыгайчик</b>
-                    <p>Рост 30 см, вес 200 г</p>
+                    <p class="catalog__details">Рост 30 см, вес 200 г</p>
                     <div class="catalog__price">
                         <b>1 200 руб.</b>
-                        <img src="" alt="">
+                        <img src="image/icons/icon-cart.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="catalog__item">
-                <div class="catalog__image"><img src="image/photo-2-mobile@1x.jpg" alt=""></div>
+                <div class="catalog__image"><img class="catalog__image-target" width="260" height="195"
+                        src="image/photo-2-mobile@1x.jpg" alt=""></div>
                 <div class="catalog__description">
                     <b>Корзинка для белья</b>
-                    <p>Диаметр 15 см, высота 10 см</p>
+                    <p class="catalog__details">Диаметр 15 см, высота 10 см</p>
                     <div class="catalog__price">
                         <b>690 руб.</b>
-                        <img src="" alt="">
+                        <img src="image/icons/icon-cart.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="catalog__item">
-                <div class="catalog__image"><img src="image/photo-3-mobile@1x.jpg" alt=""></div>
+                <div class="catalog__image"><img class="catalog__image-target" width="260" height="195"
+                        src="image/photo-3-mobile@1x.jpg" alt=""></div>
                 <div class="catalog__description">
                     <b>Большая корзинка
                         для игрушек</b>
-                    <p>Диаметр 30 см, высота 30 см</p>
+                    <p class="catalog__details">Диаметр 30 см, высота 30 см</p>
                     <div class="catalog__price">
                         <b>1 500 руб.</b>
-                        <img src="" alt="">
+                        <img src="image/icons/icon-cart.svg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="catalog__item">
+            <div class="catalog__item catalog__item-video">
                 <div class="catalog__subtitle">
-                    <img src="../image/icons/icon-video.svg" alt="">
-                    <b>Процесс производства</b>
+                    <img class="catalog__camera" src="image/icons/icon-video.svg" alt="">
+                    <b class="catalog__camera-description">Процесс производства</b>
                 </div>
                 <div class="catalog__video">
                     <img class="catalog__video-image" src="image/video-mobile@1x.jpg" alt="">

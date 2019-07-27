@@ -1,20 +1,15 @@
-.about {
-  @include mobile-layout-small;
+.about__wrapper {
+  @media only screen and (max-width: $tablet-width) {
+    padding: 0 $margin-header;
+  }
 }
-.about__title {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
+
+.about__item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 25px;
 }
-.about__items {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.about__item {
+.about__item-image{
   margin-bottom: 10px;
-  display: grid;
-  grid-row-gap: 10px;
 }

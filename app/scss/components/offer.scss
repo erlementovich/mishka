@@ -1,11 +1,8 @@
-.offer {
-  @include mobile-layout-small;
-}
 .offer__wrapper {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  @media only screen and (max-width: $tablet-width) {
+    padding: 0 $margin-header;
+  }
 }
-
 .offer__title-second {
   color: $text-green;
 }
@@ -16,11 +13,40 @@
 
 .offer__product-detail {
   color: $text-gray;
+  width: 100%;
 }
-.offer__cost {
-  color: $text-gray;
-  display: grid;
+.offer__image-box {
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
 }
+.offer__image {
+  width: 100%;
+  height: auto;
+}
+
 .offer__price {
   text-align: center;
+  margin-top: 20px;
+  color: $text-gray;
+}
+.offer__character {
+  border-bottom: 1px solid $border-color;
+}
+.offer__product-detail {
+  border-collapse: collapse;
+  margin-top: 20px;
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 100px;
+  }
+}
+.offer__detail-descr {
+  text-align: left;
+}
+
+.offer__cost {
+  display: flex;
+  flex-direction: column;
 }

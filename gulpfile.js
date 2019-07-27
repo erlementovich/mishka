@@ -80,7 +80,7 @@ gulp.task('sass', function () {
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(postcss([autoprefixer()]))
+        .pipe(postcss([autoprefixer({overrideBrowserslist: ['last 10 version']})]))
         .pipe(cssnano())
         .pipe(sourcemaps.write())
         .pipe(gulp.dest(path.dist.css))

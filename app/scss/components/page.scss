@@ -6,3 +6,22 @@
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: $tablet-width) {
+  .page {
+    min-width: $mobile-width - 1px;
+  }
+}
+
+
+@media only screen and (min-width: $tablet-width) {
+  .page {
+    max-width: $desktop-width - 1px;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .page {
+    max-width: $max;
+  }
+}
+

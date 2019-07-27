@@ -1,29 +1,28 @@
-.main-nav {
-  display: grid;
-}
 .main-nav__top {
-  display: grid;
-  grid-template-columns: $margin-header 1fr 100px 1fr $margin-header;
-  border-bottom: 2px solid $border-color;
-  height: 80px;
-  align-content: center;
-}
-.main-nav--help {
-  grid-column-start: 2;
-  grid-column-end: 3;
-}
-.main-nav__logo {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  @media only screen and (max-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid $border-color;
+    height: 80px;
+  }
 }
 .main-nav__toggle {
-  grid-column-start: 4;
-  grid-column-end: 5;
-}
-
-.main-nav__toggle {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  right: $margin-header;
   background: none;
   border: none;
-  justify-self: end;
   cursor: pointer;
+}
+
+.main-nav__toggle--btn {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
 }
