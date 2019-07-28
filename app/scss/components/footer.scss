@@ -7,6 +7,12 @@
     flex-direction: column;
     align-items: center;
   }
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo-image {
@@ -16,15 +22,15 @@
 }
 .page-footer__social-icons {
   @media only screen and (max-width: $tablet-width) {
-    width: 100% - 2* $margin-header;
+    width: 100% - 2 * $margin-header;
   }
- 
+
   display: flex;
   justify-content: center;
   border-bottom: 2px solid $border-color;
   height: 80px;
 }
-.social-icons__item {
+.page-footer__social-icon {
   margin: 0 25px 0 25px;
 }
 

@@ -3,11 +3,16 @@
   @media only screen and (max-width: $tablet-width) {
     padding: 0 $margin-header;
   }
+
   height: 100px;
   background: $color-interior;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media only screen and (min-width: $tablet-width) {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 .services-list__item:nth-child(2n) {
   background: $color-toys;
@@ -15,4 +20,16 @@
 
 .services-list__title {
   color: $text-white;
+}
+
+.services-list__wrapper {
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+    display: flex;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
+    display: flex;
+
+  }
 }

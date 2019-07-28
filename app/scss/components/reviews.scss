@@ -1,9 +1,15 @@
 .reviews__wrapper {
   @media only screen and (max-width: $tablet-width) {
     padding: 0 $margin-header;
-    flex-direction: column;
+  }
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
   }
   display: flex;
+  flex-direction: column;
 }
 .reviews__authors {
   list-style-type: none;
@@ -35,4 +41,8 @@
 
 .reviews__write {
   order: 1;
+  @media only screen and (min-width: $tablet-width) {
+    width: 200px;
+    align-self: flex-end;
+  }
 }

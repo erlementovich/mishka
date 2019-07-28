@@ -1,0 +1,29 @@
+@media only screen and (max-width: $tablet-width) {
+  .logo--tablet {
+    display: none;
+  }
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  .logo--mobile {
+    display: none;
+  }
+  .logo--tablet {
+    display: block;
+  }
+  .logo--desktop {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: $desktop-width) {
+  .logo--tablet {
+    display: none;
+  }
+  .logo--desktop {
+    display: block;
+  }
+}

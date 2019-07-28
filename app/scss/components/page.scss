@@ -20,8 +20,8 @@
 }
 
 @media only screen and (min-width: $desktop-width) {
-  .page {
-    max-width: $max;
-  }
+ .page {
+   max-width: 100%;
+ }
 }
 

@@ -11,8 +11,20 @@
 }
 .products__title {
   position: absolute;
-  left: $margin-header;
-  right: $margin-header;
+  @media only screen and (max-width: $tablet-width) {
+    left: $margin-header;
+    right: $margin-header;
+  }
+  @media only screen and (min-width: $tablet-width) {
+    left: $margin-header-tab;
+    right: $margin-header-tab;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    left: $margin-header-desk;
+    right: $margin-header-desk;
+
+  }
+
   top: 15%;
   text-align: center;
 }

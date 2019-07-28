@@ -1,4 +1,10 @@
 .site-list {
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
+  }
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -28,5 +34,19 @@
   }
 }
 .site-list__description {
-  margin-left: 30vw;
+  @media only screen and (max-width: $tablet-width) {
+    margin-left: 30vw;
+  }
+}
+
+.site-list--search {
+  @media only screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.site-list--delivery {
+  @media only screen and (max-width: $tablet-width) {
+    display: none;
+  }
 }

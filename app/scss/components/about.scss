@@ -2,14 +2,20 @@
   @media only screen and (max-width: $tablet-width) {
     padding: 0 $margin-header;
   }
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
+  }
 }
 
-.about__item{
+.about__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 25px;
 }
-.about__item-image{
+.about__item-image {
   margin-bottom: 10px;
 }

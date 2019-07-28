@@ -8,6 +8,8 @@ $max: 1366px;
 $text-white: #ffffff;
 $text-black: #000000;
 $text-gray: #444444;
+$radio-color: $text-gray;
+$radio-bg: #62d1ba;
 $text-green: #63d1bb;
 $color-interior: #63d1bb;
 $color-toys: #56c3b2;
@@ -23,11 +25,11 @@ $catalog-background: $footer-background;
 //margin-mobile
 
 $catalog-margin: 30px;
-$margin-header: 30 / 320 * 100%;
-
+$margin-header: 30 / 320 * 100%; // mobile-version
+$margin-header-tab: 50 / 768 * 100%; // tablet-version
+$margin-header-desk: 100 / 1250 * 100%; // desktop-version
 
 //font-size
 $main-size: 17px;
 $big-size: 27px;
 $small-size: 13px;
-

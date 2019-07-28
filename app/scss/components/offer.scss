@@ -2,6 +2,12 @@
   @media only screen and (max-width: $tablet-width) {
     padding: 0 $margin-header;
   }
+  @media only screen and (min-width: $tablet-width) {
+    padding: 0 $margin-header-tab;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
+  }
 }
 .offer__title-second {
   color: $text-green;
