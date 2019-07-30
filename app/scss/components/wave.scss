@@ -1,0 +1,10 @@
+.wave {
+    width: 100%;
+    right: 0;
+    position: absolute;
+    bottom: -10px;
+    @media only screen and (max-width: $tablet-width - 1px) {
+      display: none;
+    }
+  }
+  

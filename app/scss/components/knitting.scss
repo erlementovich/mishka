@@ -1,10 +1,22 @@
 .knitting__form {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     padding: 0 $margin-header;
+    margin-top: 50px;
   }
+  @media only screen and (min-width: $tablet-width) {
+
+    margin-top: 100px;
+  }
+ 
+  
+}
+.knitting__title-wrapper {
+  position: relative;
 }
 
 .knitting__title {
+  line-height: 0;
+  overflow: hidden;
   margin: auto;
   height: 177px;
   display: flex;
@@ -12,3 +24,4 @@
   align-items: center;
   background: $catalog-background;
 }
+

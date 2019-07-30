@@ -3,7 +3,7 @@
 }
 .page-footer__wrapper {
   display: flex;
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     flex-direction: column;
     align-items: center;
   }
@@ -13,20 +13,24 @@
     align-items: center;
     justify-content: space-between;
   }
+  @media only screen and (min-width: $desktop-width) {
+    padding: 0 $margin-header-desk;
+  }
 }
 
 .page-footer__logo-image {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     display: none;
   }
 }
 .page-footer__social-icons {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     width: 100% - 2 * $margin-header;
   }
 
   display: flex;
   justify-content: center;
+  align-items: center;
   border-bottom: 2px solid $border-color;
   height: 80px;
 }

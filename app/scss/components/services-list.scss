@@ -1,10 +1,13 @@
 .services-list__item {
   text-decoration: none;
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     padding: 0 $margin-header;
+    height: 100px;
+  }
+  @media only screen and (min-width: $tablet-width) {
+    height: 120px;
   }
 
-  height: 100px;
   background: $color-interior;
   display: flex;
   justify-content: space-between;
@@ -13,6 +16,10 @@
     width: 100%;
     justify-content: space-around;
   }
+}
+
+.services-list {
+  position: relative;
 }
 .services-list__item:nth-child(2n) {
   background: $color-toys;
@@ -23,6 +30,8 @@
 }
 
 .services-list__wrapper {
+  line-height: 0;
+  overflow: hidden;
   @media only screen and (min-width: $tablet-width) {
     padding: 0 $margin-header-tab;
     display: flex;
@@ -30,6 +39,6 @@
   @media only screen and (min-width: $desktop-width) {
     padding: 0 $margin-header-desk;
     display: flex;
-
   }
 }
+

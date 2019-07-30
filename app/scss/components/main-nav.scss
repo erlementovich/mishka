@@ -1,5 +1,5 @@
 .main-nav__top {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
 }
 
 .main-nav__list {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     display: flex;
     flex-direction: column;
   }

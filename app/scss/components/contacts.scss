@@ -5,7 +5,7 @@
 }
 
 .contacts__descr-wrapper {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     padding: 0 $margin-header;
   }
   @media only screen and (min-width: $tablet-width) {
@@ -17,7 +17,7 @@
 }
 .contacts__btn-wrapper {
   text-align: center;
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     padding: 0 $margin-header;
   }
   @media only screen and (min-width: $tablet-width) {
@@ -25,7 +25,7 @@
   }
 }
 .contacts__write {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     width: 100%;
   }
   @media only screen and (min-width: $tablet-width) {
@@ -39,13 +39,10 @@
   display: flex;
   margin-bottom: 20px;
   @media only screen and (min-width: $tablet-width) {
-    margin-right: 50px;
+    flex: 1 0 50%;
   }
 }
 
-.contacts__adress {
-  margin-left: 30px;
-}
 .mail-green {
   border-bottom: 1px solid $border-green;
   padding-bottom: 5px;
@@ -60,4 +57,21 @@
 }
 .contacts__tag {
   font-weight: bold;
+  white-space: nowrap;
+}
+.contacts__adress {
+  margin-left: 30px;
+}
+
+.contacts__title {
+  @media only screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.contacts_title--image {
+  @media only screen and (max-width: $tablet-width - 1px) {
+    display: none;
+  }
 }

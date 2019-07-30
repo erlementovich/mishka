@@ -1,31 +1,75 @@
 .offer__wrapper {
-  @media only screen and (max-width: $tablet-width) {
+  display: flex;
+  position: relative;
+
+  @media only screen and (max-width: $tablet-width - 1px) {
+    flex-wrap: wrap;
     padding: 0 $margin-header;
+    margin-bottom: $absolute-imagebox;
   }
   @media only screen and (min-width: $tablet-width) {
     padding: 0 $margin-header-tab;
+    flex-direction: column;
   }
   @media only screen and (min-width: $desktop-width) {
     padding: 0 $margin-header-desk;
   }
 }
-.offer__title-second {
-  color: $text-green;
+.offer__price-wrapper > * {
+  width: 90%;
+}
+.offer__price-wrapper {
+  @media only screen and (min-width: $tablet-width) {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.offer__cover {
+  @media only screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.offer__title {
+  @media only screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .offer__description {
+  @media only screen and (max-width: $tablet-width - 1px) {
+    width: 100%;
+  }
+  @media only screen and (min-width: $tablet-width) {
+    p {
+      margin: 0;
+    }
+  }
   color: $text-gray;
 }
 
 .offer__product-detail {
   color: $text-gray;
-  width: 100%;
+  @media only screen and (max-width: $tablet-width - 1px) {
+    width: 100%;
+  }
 }
 .offer__image-box {
-  margin-top: 40px;
-  width: 100%;
-  height: auto;
+  @media only screen and (max-width: $tablet-width - 1px) {
+    width: 100%;
+    margin-top: 40px;
+  }
+  @media only screen and (min-width: $tablet-width) {
+    flex: 1 0 50%;
+    margin: 0;
+  }
 }
+
 .offer__image {
   width: 100%;
   height: auto;
@@ -53,6 +97,21 @@
 }
 
 .offer__cost {
+  @media only screen and (max-width: $tablet-width - 1px) {
+    width: 100% - 2 * $margin-header;
+    position: absolute;
+    bottom: -$absolute-imagebox;
+  }
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.offer__order {
+  width: 100%;
+  @media only screen and (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+}
+.offer__title-second {
+  color: $text-green;
 }

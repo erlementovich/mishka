@@ -12,7 +12,7 @@
 
 .site-list__link {
   text-decoration: none;
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     height: 80px;
     border-bottom: 2px solid $border-color;
   }
@@ -28,13 +28,13 @@
   align-items: center;
 }
 .site-list__image {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     position: absolute;
     left: $margin-header;
   }
 }
 .site-list__description {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     margin-left: 30vw;
   }
 }
@@ -46,7 +46,7 @@
 }
 
 .site-list--delivery {
-  @media only screen and (max-width: $tablet-width) {
+  @media only screen and (max-width: $tablet-width - 1px) {
     display: none;
   }
 }
