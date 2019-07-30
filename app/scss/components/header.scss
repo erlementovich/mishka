@@ -1,0 +1,6 @@
+.page-header {
+  @media only screen and (min-width: $tablet-width) {
+    margin-bottom: -$link-height;
+    z-index: 1;
+  }
+}

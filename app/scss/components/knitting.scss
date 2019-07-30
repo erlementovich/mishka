@@ -4,11 +4,8 @@
     margin-top: 50px;
   }
   @media only screen and (min-width: $tablet-width) {
-
     margin-top: 100px;
   }
- 
-  
 }
 .knitting__title-wrapper {
   position: relative;
@@ -18,10 +15,9 @@
   line-height: 0;
   overflow: hidden;
   margin: auto;
-  height: 177px;
+  height: $title-height;
   display: flex;
   justify-content: center;
   align-items: center;
   background: $catalog-background;
 }
-

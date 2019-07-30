@@ -23,14 +23,15 @@ $footer-background: #f1f1f1;
 $catalog-background: $footer-background;
 $form-background: $footer-background;
 
-//margin-mobile
+//margin
 
 $catalog-margin: 30px;
 $margin-header: 30 / 320 * 100%; // mobile-version
 $margin-header-tab: 50 / 768 * 100%; // tablet-version
 $margin-header-desk: 100 / 1250 * 100%; // desktop-version
-
 $absolute-imagebox: 180px;
+$link-height: 80px;
+$title-height: 200px;
 
 //font-size
 $main-size: 17px;

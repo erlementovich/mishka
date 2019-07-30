@@ -1,0 +1,5 @@
+.page-main{
+    @media only screen and (min-width: $tablet-width) {
+        border-top: 1px solid $border-color;
+    }
+}

@@ -13,10 +13,11 @@
 .site-list__link {
   text-decoration: none;
   @media only screen and (max-width: $tablet-width - 1px) {
-    height: 80px;
+    height: $link-height;
     border-bottom: 2px solid $border-color;
   }
   align-items: center;
+  height: $link-height;
 }
 
 .site-list__link {
@@ -35,7 +36,7 @@
 }
 .site-list__description {
   @media only screen and (max-width: $tablet-width - 1px) {
-    margin-left: 30vw;
+    margin-left: 35vw;
   }
 }
 
@@ -48,5 +49,97 @@
 .site-list--delivery {
   @media only screen and (max-width: $tablet-width - 1px) {
     display: none;
+  }
+}
+
+.site-list {
+  @media only screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.site-list__pages {
+  @media only screen and (min-width: $tablet-width) {
+    order: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    order: -1;
+  }
+}
+.site-list__client {
+  @media only screen and (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+.site-list__russia {
+  @media only screen and (min-width: $tablet-width) {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.site-list > * {
+  @media only screen and (min-width: $tablet-width) {
+    flex: 1 0 50%;
+    display: flex;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    display: flex;
+    flex: 1 0 30%;
+  }
+}
+
+.site-list__client--link {
+  @media only screen and (min-width: $tablet-width) {
+    margin-right: 3vw;
+    margin-left: 3vw;
+  }
+}
+.site-list--knitting {
+  @media only screen and (min-width: $tablet-width) {
+    margin-left: 2vw;
+  }
+}
+.site-list--goods {
+  @media only screen and (min-width: $tablet-width) {
+    padding-right: 2vw;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    border-right: 1px solid $border-color;
+  }
+}
+
+.site-list__search {
+  @media only screen and (min-width: $tablet-width) {
+    border-left: 1px solid $border-color;
+    border-right: 1px solid $border-color;
+  }
+}
+
+.site-list--sale {
+  @media only screen and (min-width: $tablet-width) {
+    margin-left: 3vw;
+  }
+}
+.site-list--special {
+  display: none;
+  @media only screen and (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.site-list__logo {
+  @media only screen and (min-width: $desktop-width) {
+    flex: 1 0 5%;
+    margin-left: 30px;
   }
 }

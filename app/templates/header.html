@@ -2,7 +2,7 @@
     <nav class="main-nav">
         <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
-                <li class="main-nav__top">
+                <li class="main-nav__top site-list__logo">
                     <a class="main-nav__logo" href="index.html">
                         <img class="logo--mobile" src="image/icons/logo-mobile.svg" alt="">
                         <img class="logo--tablet" src="image/icons/logo-tablet.svg" alt="">
@@ -11,41 +11,59 @@
                     <button class="main-nav__toggle"><img class="main-nav__toggle--btn"
                             src="image/icons/icon-menu-open.svg" alt=""></button>
                 </li>
-                <a class="site-list__link" href="catalog.html">
-                    <li class="site-list__item ">
-                        <img class="site-list__image" alt="">
-                        <b class="site-list__description">Каталог товаров</b>
 
-                    </li>
-                </a>
-                <a class="site-list__link" href="form.html">
-                    <li class="site-list__item">
-                        <img class="site-list__image" alt="">
-                        <b class="site-list__description">Вязание на заказ</b>
+                <div class="site-list__pages">
+                    <a class="site-list__link site-list--goods" href="catalog.html">
+                        <li class="site-list__item ">
+                            <img class="site-list__image" alt="">
+                            <b class="site-list__description">Каталог товаров</b>
 
-                    </li>
-                </a>
-                <a class="site-list__link" href="">
-                    <li class="site-list__item">
-                        <img class="site-list__image" src="image/icon-search.svg" alt="">
-                        <b class="site-list__description site-list--search">Поиск по сайту</b>
+                        </li>
+                    </a>
+                    <a class="site-list__link site-list--knitting" href="form.html">
+                        <li class="site-list__item">
+                            <img class="site-list__image" alt="">
+                            <b class="site-list__description">Вязание на заказ</b>
 
-
-                    </li>
-                </a>
-                <a class="site-list__link" href="">
-                    <li class="site-list__item">
-                        <img class="site-list__image" src="image/icons/icon-cart.svg" alt="">
-                        <b class="site-list__description">Корзина: пока пуста</b>
+                        </li>
+                    </a>
+                </div>
+                <div class="site-list__client">
+                    <a class="site-list__link site-list__search" href="">
+                        <li class="site-list__item">
+                            <img class="site-list__image site-list__client--link" src="image/icon-search.svg" alt="">
+                            <b class="site-list__description site-list--search">Поиск по сайту</b>
 
 
-                    </li>
-                </a>
-                <a class="site-list__link site-list--delivery" href="">
-                    <li class="site-list__item">
-                        <p class="site-list__description ">Бесплатная доставка по России</p>
-                    </li>
-                </a>
+                        </li>
+                    </a>
+                    <a class="site-list__link" href="">
+                        <li class="site-list__item">
+                            <img class="site-list__image site-list__client--link" src="image/icons/icon-cart.svg"
+                                alt="">
+                            <b class="site-list__description">Корзина: пока пуста</b>
+                        </li>
+                    </a>
+                </div>
+                <div class="site-list__russia">
+                    <a class="site-list__link site-list--delivery" href="">
+                        <li class="site-list__item">
+                            <p class="site-list__description ">Бесплатная доставка по России</p>
+                        </li>
+                    </a>
+                </div>
+                <div class="site-list--special">
+                    <a class="site-list__link " href="">
+                        <li class="site-list__item">
+                            <b class="site-list__description">Новые поступления</b>
+                        </li>
+                    </a>
+                    <a class="site-list__link site-list--sale" href="">
+                        <li class="site-list__item">
+                            <b class="site-list__description ">Распродажа</b>
+                        </li>
+                    </a>
+                </div>
             </ul>
         </div>
     </nav>
