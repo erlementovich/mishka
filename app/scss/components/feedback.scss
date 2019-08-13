@@ -4,6 +4,8 @@
   }
   @media only screen and (min-width: $desktop-width) {
     padding: 0 $margin-header-desk;
+    width: 4* $small-desktop;
+    margin: 0 auto;
   }
 }
 .feedback__padding {
@@ -12,6 +14,7 @@
   }
   @media only screen and (min-width: $desktop-width) {
     padding: 0 $margin-header-desk;
+    padding-right: $margin-header-desk + $xs-desktop; 
   }
 }
 .feedback__bottom {
@@ -28,6 +31,7 @@
   color: $text-green;
   margin-right: 25px;
 }
+
 .feedback__decoration {
   display: flex;
   flex-direction: row;
@@ -35,6 +39,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .feedback__form--line {
   @media only screen and (min-width: $tablet-width) {
     display: none;
@@ -176,6 +181,9 @@
     flex: 1 0 168 / 768 * 100%;
     margin-top: 0;
   }
+  @media only screen and (min-width: $desktop-width) {
+    flex: 1 0 $small-desktop;
+  }
 }
 .feedback__label,
 .feedback__fullname-wrap,
@@ -244,10 +252,30 @@
     align-items: center;
     justify-content: space-between;
   }
+  @media only screen and (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .feedback__button {
   @media only screen and (min-width: $tablet-width) {
     max-width: 230px;
+  }
+  @media only screen and (min-width: $desktop-width) {
+    margin-left: $xs-desktop;
+  }
+}
+
+.feedback__position {
+  @media only screen and (min-width: $desktop-width) {
+    flex: 1 0 $big-desktop;
+    //width: $big-desktop;
+  }
+}
+
+.feedback__required{
+  @media only screen and (min-width: $desktop-width) {
+    margin-right: $small-desktop;
   }
 }
